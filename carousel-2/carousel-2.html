@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <style>
+
+    body {
+        background-color: #234;
+    }
+    .carousel {
+        width: 840px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        box-shadow: 0 0 10px 2px black;
+    }
+    .carousel .slide {
+        width: 2700px;
+        transition: 0.7s;
+    }
+    .carousel .controls {
+        text-align: center;
+    }
+    .carousel .controls a {
+        color: antiquewhite;
+        text-decoration: none;
+        font-size: 40px;
+    }
+    .carousel .controls a:hover {
+        color: orange;
+        border: 1px solid gray;
+        border-radius: 20px;
+    }
+    
+    .carousel #left:target .slide {
+        transform: translateX(0px);
+    }
+    .carousel #center:target .slide {
+        transform: translateX(-840px);
+    }
+    .carousel #right:target .slide {
+        transform: translateX(-1680px);
+    }
+    .image {
+        margin-right: -4px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="carousel">
+
+    <div id="left">
+        <div id="center">
+        <div id="right">
+
+            <div class="slide">
+                <span class="image"><img src="https://i.picsum.photos/id/413/280/400.jpg?hmac=G5zEwJ6aKW_qQgHi1K39dCr7axm-qpL0tfvGZTlZlKg" alt=""></span>
+                <span class="image"><img src="https://i.picsum.photos/id/798/280/400.jpg?hmac=DZFyl49FPFRvhr4OFwCyfFVt4gF9ldm00iZvtRm47L0" alt=""></span>
+                <span class="image"><img src="https://i.picsum.photos/id/454/280/400.jpg?hmac=NZxztSX2OAPHPPHCeI3AqYfBe_96I9x5B3hKWbRQq5I" alt=""></span>
+                <span class="image"><img src="https://i.picsum.photos/id/556/280/400.jpg?hmac=CnQsHJp43Qkhel_Zj1RpozDhH9wHbhBEGhine9DXCXg" alt=""></span>
+                <span class="image"><img src="https://i.picsum.photos/id/209/280/400.jpg?hmac=ik2yx1qhFw3iBOYpCxifdiUydZTsN7bnkbTBYKHQU0o" alt=""></span>
+                <span class="image"><img src="https://i.picsum.photos/id/653/280/400.jpg?hmac=guqNh0f_S6fT6syfgmAZXFu9Ogo5ZNq8OVv3qXbv6V0" alt=""></span>
+                <span class="image"><img src="https://i.picsum.photos/id/1059/280/400.jpg?hmac=UJJN-7BbIyPhKdwjeqYzz8kpY_c0WymPCZusR6dAQoA" alt=""></span>
+                <span class="image"><img src="https://i.picsum.photos/id/4/280/400.jpg?hmac=QM-aXCloZ_1-zNrrSn5XrX9cvnBkhOYT0M1bW-5JXEQ" alt=""></span>
+                <span><img src="https://i.picsum.photos/id/435/280/400.jpg?hmac=CldZT-ZcX3rLaH66wEKmJpjlBziZhO_MhE_x76CyjL0" alt=""></span>
+            </div>
+        </div>
+        </div>
+        
+    </div>
+
+        <div class="controls">
+            <a href="#left">1</a>&#10240;
+            <a href="#center">2</a>&#10240;
+            <a href="#right">3</a>
+        </div>
+    </div>
+</body>
+</html>
